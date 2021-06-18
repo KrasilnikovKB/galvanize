@@ -126,6 +126,7 @@ class Galvanize implements IGalvanize
 				1927, // Connection was killed
 				1047, // WSREP has not yet prepared node for application use
 				2006, // MySQL server has gone away
+				2013, // Lost connection to MySQL server
 			]
 		)
 		) {
