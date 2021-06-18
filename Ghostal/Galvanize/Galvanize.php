@@ -102,6 +102,7 @@ class Galvanize implements IGalvanize
 		in_array(
 			$this->_connection->errno,
 			[
+				1180, // Got error during COMMIT
 				1213, // Deadlock found when trying to get lock; try restarting transaction
 				1205, // Lock wait timeout exceeded; try restarting transaction
 			]
@@ -122,6 +123,7 @@ class Galvanize implements IGalvanize
 		in_array(
 			$this->_connection->errno,
 			[
+				1927, // Connection was killed
 				1047, // WSREP has not yet prepared node for application use
 				2006, // MySQL server has gone away
 			]
